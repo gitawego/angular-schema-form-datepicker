@@ -11,12 +11,11 @@ angular.module('schemaForm-timepicker', ['schemaForm', 'pickadate']).config(
         if (f.onChange) {
           f.pickerOption.onSet = f.onChange;
         }
-        
-        if ('minTime' in f){
+        if ('minTime' in f) {
           f.pickerOption.min = f.minTime;
         }
 
-        if ('maxTime' in f){
+        if ('maxTime' in f) {
           f.pickerOption.max = f.maxTime;
         }
 
